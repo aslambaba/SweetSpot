@@ -1,0 +1,39 @@
+.MainLogin{
+    width: 100%;
+    text-align: center;
+    padding: 10% 0;
+}
+.loginForm{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px 40px;
+    text-align: center !important;
+    display: inline-block;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.082);
+
+}
+.loginForm input{
+    border: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 12px 10px;
+    width: 90%;
+}
+.loginForm input:hover{
+    border-color: rgba(238, 130, 238, 0.733);
+}
+.subBTN{
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    width: 30% !important;
+}
+.subBTN:hover{
+    background-color: violet;
+    transition: 400ms;
+    color: white;
+}
+.loginForm label{
+    font-size: 12px;
+}

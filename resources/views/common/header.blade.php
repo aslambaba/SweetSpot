@@ -8,9 +8,11 @@
             <li><a href='/sweetspot/public/products'>Products</a></li>
             <li><a href='/sweetspot/public/contactus'>Contact Us</a></li>
             <li>
-                <button>
-                    Admin Login
-                </button>
+                <a href="/sweetspot/public/login">
+                    <button>
+                        Admin Login
+                    </button>
+                </a>
             </li>
         </ul>
     </div>
