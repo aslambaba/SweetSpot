@@ -1,0 +1,45 @@
+.HeaderMain{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.082);
+}
+.brandName{
+    padding: 0px 20px;
+    display: inline-block;
+    width: 30%;
+}
+.brandName h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.HeaderMenu{
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+}
+.HeaderMain .HeaderMenu ul li{
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    margin: 0px 10px;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+}
+.HeaderMenu ul li button{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px 10px;
+    background-color: violet;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+.mainbody{
+    margin-top: 100px;
+}
