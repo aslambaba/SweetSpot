@@ -22,3 +22,7 @@ Route::get('/products', function(){
 Route::get('/login', function(){
     return view('login');
 });
+
+Route::get('/contactus',function (){
+    return view('contact');
+});
