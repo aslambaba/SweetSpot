@@ -16,7 +16,7 @@
         <div class="MainLogin">
             <div class="loginForm">
                 <h3>Login</h3>
-                <form>
+                <form action='http://localhost/sweetspot/public/admin'>
                     <input placeholder="Username">
                     <input placeholder="Password">
                     <input class='subBTN' type="submit" name="Login">

@@ -26,3 +26,10 @@ Route::get('/login', function(){
 Route::get('/contactus',function (){
     return view('contact');
 });
+
+Route::get('/admin',function (){
+    return view('adminPanel');
+});
+Route::get('/admin/addproduct',function (){
+    return view('adminAddProduct');
+});
