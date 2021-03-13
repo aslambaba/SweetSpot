@@ -11,12 +11,13 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link rel='stylesheet' href="{{asset('css/commonstyle/header.css')}}"/>
+        <link rel='stylesheet' href="{{asset('css/commonstyle/common.css')}}"/>
 
     </head>
     <body>
         @include("common.header")
         <div class="mainbody">
+            @include("common.mainslider")
         </div>
     </body>
 </html>
