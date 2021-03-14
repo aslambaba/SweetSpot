@@ -17,11 +17,12 @@
         @include('common.adminNav')
         <div class="MainContactPage">
             <h2>ADD PRODUCT</h2>
-            <form>
-                <input  placeholder="Product Name" /><br />
-                <input  placeholder="Price" /><br />
-                <textarea rows="10" cols="45" placeholder="Product Description"></textarea><br />
-                <button>ADD</button>
+            <form method="post" action="/sweetspot/public/admin/addproduct">
+                {{csrf_field()}}
+                <input  placeholder="Product Name" name='Product Name'/><br />
+                <input  placeholder="Price" name='Product Price' /><br />
+                <textarea rows="10" cols="45" placeholder="Product Description" name="Product Description"></textarea><br />
+                <button type="submit" name="submit">ADD</button>
             </form>
         </div>
     </div>

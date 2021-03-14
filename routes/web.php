@@ -11,6 +11,8 @@
 |
 */
 
+use App\Product;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,3 +35,5 @@ Route::get('/admin',function (){
 Route::get('/admin/addproduct',function (){
     return view('adminAddProduct');
 });
+
+Route::post('/admin/addproduct','Actions@AddNewProuct');
