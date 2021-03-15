@@ -40,3 +40,4 @@ Route::post('/admin/addproduct','Actions@AddNewProuct');
 Route::get('/admin/messeges',function (){
     return view('adminMesseges');
 });
+Route::post('/contactus','Actions@AddMessege');

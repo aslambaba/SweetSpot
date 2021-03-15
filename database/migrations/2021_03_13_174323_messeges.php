@@ -13,7 +13,13 @@ class Messeges extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('messeges', function(Blueprint $table){
+            $table->increments('Messege_id');
+            $table->string('Messege_Sender_Name',25);
+            $table->string('Messege_Sender_Email');
+            $table-> string('Messege_Body',1000);
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ class Messeges extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('messeges');
     }
 }
