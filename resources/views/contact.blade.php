@@ -16,10 +16,10 @@
     <div class="mainbody">
         <div class="MainContactPage">
             <h2>CONTACT US</h2>
-            <form>
-                <input  placeholder="Name" /><br />
-                <input  placeholder="Email" /><br />
-                <textarea rows="10" cols="45" placeholder="Messege"></textarea><br />
+            <form method="post" action="http://localhost/sweetspot/public/contactus">
+                <input  placeholder="Name" name="Name"/><br />
+                <input  placeholder="Email" name="Email"/><br />
+                <textarea rows="10" cols="45" placeholder="Messege" name="Messege"></textarea><br />
                 <button>Send</button>
             </form>
         </div>

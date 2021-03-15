@@ -35,5 +35,8 @@ Route::get('/admin',function (){
 Route::get('/admin/addproduct',function (){
     return view('adminAddProduct');
 });
-
 Route::post('/admin/addproduct','Actions@AddNewProuct');
+
+Route::get('/admin/messeges',function (){
+    return view('adminMesseges');
+});

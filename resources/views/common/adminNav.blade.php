@@ -1,6 +1,7 @@
 <div class="adminNavBar">
     <a href='http://localhost/sweetspot/public/admin'><button>View Products</button></a>
     <a href='http://localhost/sweetspot/public/admin/addproduct'><button>Add Products</button></a>
+    <a href='http://localhost/sweetspot/public/admin/messeges'><button>Messeges</button></a>
 </div>
 
 <style>
@@ -12,6 +13,7 @@ Admin Panel Styling
 
 .adminNavBar{
     padding: 10px 20px !important;
+    text-align: center;
 }
 
 .adminNavBar button{
