@@ -25,6 +25,7 @@ class Actions extends Controller
         $new_messege->Messege_Sender_Name = $req->Name;
         $new_messege->Messege_Sender_Email = $req->Email;
         $new_messege->Messege_Body = $req->Messege;
+        $new_messege->save();
 
         return redirect('/contactus');
         
