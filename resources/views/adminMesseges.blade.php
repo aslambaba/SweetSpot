@@ -18,18 +18,14 @@
         <div class="MainMessegePage">
             <h1>Messeges</h1>
             <div class="MessgesBody">
+                @foreach($messeges as $msg)
                 <div class="singleMessege">
-                    <h5>Aslam</h5>
-                    <h6>aslam91r@gmail.com</h6>
-                    <p>Hello Sir, I Love your products and want to but these cakes in bulk for my buinsess in United States</p>
-                    <sub>12-May-2020</sub>
+                    <h5>{{$msg->Messege_Sender_Name}}</h5>
+                    <h6>{{$msg->Messege_Sender_Email}}</h6>
+                    <p>{{$msg->Messege_Body}}</p>
+                    <sub>{{$msg->created_at}}</sub>
                 </div>
-                <div class="singleMessege">
-                    <h5>Aslam</h5>
-                    <h6>aslam91r@gmail.com</h6>
-                    <p>Hello Sir, I Love your products and want to but these cakes in bulk for my buinsess in United States</p>
-                    <sub>12-May-2020</sub>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -11,6 +11,7 @@
 |
 */
 
+use App\Messege;
 use App\Product;
 
 Route::get('/', function () {
@@ -40,6 +41,7 @@ Route::get('/admin/addproduct',function (){
 Route::post('/admin/addproduct','Actions@AddNewProuct');
 
 Route::get('/admin/messeges',function (){
-    return view('adminMesseges');
+    $getMesseges = Messege::all();
+    return view('adminMesseges',["messeges"=>$getMesseges]);
 });
 Route::post('/contactus','Actions@AddMessege');
