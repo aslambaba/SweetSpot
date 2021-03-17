@@ -17,60 +17,17 @@
     @include("common.header")
     <div class="mainbody">
         <div class="productsec">
+        @foreach($products as $product)
             <div class="singleProduct">
                 <img src="{{url('/images/cake1.png')}}" alt="Image" />
-                <h5>$24.00</h5>
-                <h3>Full Chocolaty CupCake with Berry</h3>
+                <h5>${{$product->ProductPrice}}</h5>
+                <h3>{{$product->ProductName}}</h3>
                 <div class="singleProductBTN">
                     <button>Add To Cart</button>
                     <button>Buy</button>
                 </div>
             </div>
-            <div class="singleProduct">
-                <img src="{{url('/images/cake2.png')}}" alt="Image" />
-                <h5>$24.00</h5>
-                <h3>Full Chocolaty CupCake with Berry</h3>
-                <div class="singleProductBTN">
-                    <button>Add To Cart</button>
-                    <button>Buy</button>
-                </div>
-            </div>
-            <div class="singleProduct">
-                <img src="{{url('/images/cake3.jpg')}}" alt="Image" />
-                <h5>$24.00</h5>
-                <h3>Full Chocolaty CupCake with Berry</h3>
-                <div class="singleProductBTN">
-                    <button>Add To Cart</button>
-                    <button>Buy</button>
-                </div>
-            </div>
-            <div class="singleProduct">
-                <img src="{{url('/images/cake4.png')}}" alt="Image" />
-                <h5>$24.00</h5>
-                <h3>Full Chocolaty CupCake with Berry</h3>
-                <div class="singleProductBTN">
-                    <button>Add To Cart</button>
-                    <button>Buy</button>
-                </div>
-            </div>
-            <div class="singleProduct">
-                <img src="{{url('/images/cake5.png')}}" alt="Image" />
-                <h5>$24.00</h5>
-                <h3>Full Chocolaty CupCake with Berry</h3>
-                <div class="singleProductBTN">
-                    <button>Add To Cart</button>
-                    <button>Buy</button>
-                </div>
-            </div>
-            <div class="singleProduct">
-                <img src="{{url('/images/cake6.png')}}" alt="Image" />
-                <h5>$24.00</h5>
-                <h3>Full Chocolaty CupCake with Berry</h3>
-                <div class="singleProductBTN">
-                    <button>Add To Cart</button>
-                    <button>Buy</button>
-                </div>
-            </div>
+        @endforeach
         </div>
     </div>
 </body>

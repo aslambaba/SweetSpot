@@ -18,7 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/products', function(){
-    return view('products');
+    $getProducts = Product::all();
+    return view('products',['products'=>$getProducts]);
 });
 
 Route::get('/login', function(){
@@ -30,7 +31,8 @@ Route::get('/contactus',function (){
 });
 
 Route::get('/admin',function (){
-    return view('adminPanel');
+    $getProducts = Product::all();
+    return view('adminPanel',['products'=>$getProducts]);
 });
 Route::get('/admin/addproduct',function (){
     return view('adminAddProduct');
