@@ -1,0 +1,30 @@
+h3{
+    font-size: 22px;
+}
+.aboutusSection,.Sweets{
+    margin: 5px 0px;
+    background-color: blanchedalmond;
+    padding: 40px 0px;
+}
+.Sweets{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.aboutusImg, .aboutusTxt{
+    width: 45%;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px 10px;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+}
+.sweet{
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
